@@ -124,9 +124,9 @@ mp = MusicPlayer()
 async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
     if is_connected:
         mp.chat_id = int("-100" + str(gc.full_chat.id))
-        await mp.send_text(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+        await mp.send_text(f"{emoji.CHECK_MARK_BUTTON} I am there now")
     else:
-        await mp.send_text(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        await mp.send_text(f"{emoji.CROSS_MARK_BUTTON} Okay I left it")
         mp.chat_id = None
 
 

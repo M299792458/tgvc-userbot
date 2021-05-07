@@ -47,8 +47,8 @@ from utils.filters import main_filter, self_or_contact_filter
 from utils.vc import mp
 
 DELETE_DELAY = 8
-DURATION_AUTOPLAY_MIN = 10
-DURATION_PLAY_HOUR = 3
+DURATION_AUTOPLAY_MIN = 600
+DURATION_PLAY_HOUR = 12
 
 USERBOT_HELP = f"""{emoji.LABEL}  **Common Commands**:
 __available to group members of current voice chat__
